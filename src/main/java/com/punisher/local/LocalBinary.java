@@ -1,4 +1,4 @@
-package com.browserstack.local;
+package com.punisher.local;
 
 import org.apache.commons.io.FileUtils;
 import java.io.IOException;

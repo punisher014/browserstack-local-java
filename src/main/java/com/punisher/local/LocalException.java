@@ -1,4 +1,4 @@
-package com.browserstack.local;
+package com.punisher.local;
 
 class LocalException extends Exception {
 

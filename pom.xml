@@ -1,13 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.browserstack</groupId>
-    <artifactId>browserstack-local-java</artifactId>
+    <groupId>com.punisher</groupId>
+    <artifactId>punisher-local-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.8-SNAPSHOT</version>
+    <version>1.0.0</version>
 
-    <name>browserstack-local-java</name>
-    <description>Java bindings for BrowserStack Local</description>
-    <url>https://www.browserstack.com</url>
+    <name>punisher-local-java</name>
+    <description>Java bindings for Local</description>
 
     <licenses>
         <license>
@@ -16,19 +15,10 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <name>BrowserStack</name>
-            <email>support@browserstack.com</email>
-            <organization>BrowserStack</organization>
-            <organizationUrl>https://www.browserstack.com</organizationUrl>
-        </developer>
-    </developers>
-
     <scm>
-        <connection>scm:git:git@github.com:browserstack/browserstack-local-java.git</connection>
-        <developerConnection>scm:git:git@github.com:browserstack/browserstack-local-java.git</developerConnection>
-        <url>git@github.com:browserstack/browserstack-local-java.git</url>
+        <connection>scm:git:git@github.com:punisher014/browserstack-local-java.git</connection>
+        <developerConnection>scm:git:git@github.com:punisher014/browserstack-local-java.git</developerConnection>
+        <url>git@github.com:punisher014/browserstack-local-java.git</url>
         <tag>HEAD</tag>
   </scm>
 
@@ -156,6 +146,19 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.4.2</version>
             </plugin>
+            <plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>fully.qualified.MainClass</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
 </project>
