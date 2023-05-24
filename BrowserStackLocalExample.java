@@ -12,8 +12,8 @@ public class BrowserStackLocalExample {
   Local l; 
 
   public static void main() throws Exception {
-    String username = System.getenv("BROWSERSTACK_USERNAME");
-    String access_key = System.getenv("BROWSERSTACK_ACCESS_KEY");
+    String username = System.getenv("B_USERNAME");
+    String access_key = System.getenv("B_ACCESS_KEY");
 
     DesiredCapabilities caps = new DesiredCapabilities();
     caps.setCapability("browser", "Firefox");
