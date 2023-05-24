@@ -30,7 +30,6 @@ jobs:
           mvn \
             --no-transfer-progress \
             --batch-mode \
-            -DskipTests \
             deploy
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
