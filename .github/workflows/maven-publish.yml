@@ -24,7 +24,7 @@ jobs:
         with:
           allowUpdates: true
           artifacts: "${{ github.workspace }}/target/*.jar"
-          token: "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"
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to the Maven Central Repository
         run: |
           mvn \
